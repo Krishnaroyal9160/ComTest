@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Test Suite" parallel="tests">
+ 
+ 
+  <test  name="Amazon TestCases in Chrome">
+  <parameter name="browser" value="chrome"/>
+ 
+    <classes>
+      <class name="com.amazon.qa.testcases.LoginPageTest"/>
+      <class name="com.amazon.qa.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Amazon TestCases -->
+  
+  
+  <test  name="Amazon TestCases in ff">
+  <parameter name="browser" value="ff"/>
+ 
+    <classes>
+      <class name="com.amazon.qa.testcases.LoginPageTest"/>
+      <class name="com.amazon.qa.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Amazon TestCases -->
+  
+</suite> <!-- Amazon Test Suite -->
